@@ -408,6 +408,8 @@ header .container {
   background-color: var(--card-bg);
   border-radius: 10px;
   overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
   box-shadow: var(--card-shadow);
   position: relative;
   transition: transform 0.3s ease;
@@ -855,6 +857,27 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: var(--background-dark);
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    margin-left: 15px;
+  }
+
   .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -918,25 +941,7 @@ footer {
 }
 
 @media (max-width: 640px) {
-  .nav-links {
-    display: none;
-  }
 
-  .nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background-color: var(--background-dark);
-    padding: 20px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-  }
-
-  .mobile-menu-btn {
-    display: block;
-  }
 
   .hero-content h1,
   .about-content h2,
