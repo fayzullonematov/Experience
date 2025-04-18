@@ -1,447 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="./styles/fonts.css" />
-  <link rel="stylesheet" href="./styles/normalize.css" />
-  <link rel="stylesheet" href="./styles/stlyes.css" />
-
-  <title>Experience</title>
-</head>
-
-<body>
-  <!-- FOOTER -->
-  <footer class="container footer-container">
-    <img class=" logo" src="./images/logo (2).svg" alt="Logo" />
-
-    <ul class="footer-nav">
-      <li class="nav-item">Home</li>
-      <li class="nav-item">About</li>
-      <li class="nav-item">Features</li>
-      <li class="nav-item">Services</li>
-      <li class="nav-item">Pricing</li>
-      <li class="nav-item">Join Now</li>
-    </ul>
-  </footer>
-
-  <!-- HERO -->
-
-  <div class="container hero-container">
-    <img class="bit-img" src="./images/bitcoin_btc_0003 1.png" alt="coin" width="478" height="388" />
-
-    <div class="container hero-word">
-      <h1 class="container hero-title">
-        Tradingga qiziqyapsizmi ? Bilimingiz va Kapitalingizni <span class="hero-span">Miracle Investment</span>
-        bilan oshiring
-      </h1>
-      <p class="container hero-text">
-        KAPITALINGIZ MUZLAB TURISHIDAN ZERIKDINGIZ. Tradingni sinab ko’ring va o’zingizga investitsiya qilgan holda
-        kapitalingizni ko’taring. Jahon moliya bozorini tahlillarini biz bilan o’rganing yoki biz taqdim qiladigan
-        signallar bilan savdolaringizni osonlik bilan boshqaring.
-      </p>
-
-      <div class="hero-buttons container">
-        <div class="btn btn-start">
-          <a class="hero-btn" href="https://t.me/miracle_investment_fx">Hoziroq boshlash </a>
-          <img class="btn-img" src="./images/start-btn.svg" alt="" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miracle Investment</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" href="./assets/logo.icon" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Miracle Investment</h1>
         </div>
-
-        <div class="btn btn-watch">
-          <img class="btn-img" src="./images/Play.svg" alt="" />
-          <a class="hero-btn" href="https://youtu.be/FiYbz74cuQI?si=Q9zd4iSC_Qea6pmb">Videoni Ko`rish</a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#videos">Videos</a></li>
+          </ul>
+        </nav>
+        <div class="join-button">
+          <a href="https://t.me/gtrade" target="_blank" class="btn btn-primary"
+            >Join Now</a
+          >
+        </div>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
-    </div>
-  </div>
+    </header>
 
-  <!-- MAIN -->
-
-  <main class="container main-container">
-
-    <div class="container services-container">
-      <h1 class="services-title offer container"> Biz sizga o`zimizni <span class="hero-span">servislarni</span> taklif qilamiz
-      </h1>
-      <p class="container services-text">
-        Professional jamoamiz tomonidan taqdim etiladigan xizmatlardan foydalaning.
-      </p>
-
-      <div class="container grid-container">
-        <div class="grid-1 responsive-lobi">
-          <img class="grid-image" src="./images/signal.svg" alt="computer" width="75" height="75" />
-          <h2 class="grid-title">Signallar</h2>
-          <p class="grid-text">1 oylik <br>
-            3 oylik <br>
-            1 yillik <br> xizmatlarimizdan foydalaning </p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Trade with confidence on a secure platform</h1>
+          <p>
+            Join millions of traders worldwide and experience the power of
+            professional trading tools and competitive fees.
+          </p>
+          <div class="hero-cta">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+          <div class="stats">
+            <div class="stat-item">
+              <h3>$2.8B+</h3>
+              <p>Daily Volume</p>
+            </div>
+            <div class="stat-item">
+              <h3>180+</h3>
+              <p>Countries</p>
+            </div>
+            <div class="stat-item">
+              <h3>5M+</h3>
+              <p>Users</p>
+            </div>
+          </div>
         </div>
+        <div class="hero-image">
+          <img src="./assets/logo.png" alt="Trading Dashboard" />
+        </div>
+      </div>
+    </section>
 
-        <div class="grid-1 responsive-grid">
-          <img class="grid-image" src="./images/capital.svg" alt="computer" width="75" height="75" />
-          <h2 class="grid-title">Kapital Boshqaruv</h2>
-          <p class="grid-text">Investor bilan shaxsiy yuzma-yuz yoki video uchrashuv orqali kelishilib shartnoma
-            tuziladi.
+    <!-- Markets Section -->
+    <!-- <section id="markets" class="markets">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular Markets</h2>
+          <p>
+            Trade the world's most popular cryptocurrencies, stocks, and forex
+            pairs
           </p>
         </div>
-
-        <div class="grid-1 youtube">
-          <img class="grid-image" src="./images/video.svg" alt="computer" width="75" height="75" />
-          <h2 class="grid-title">Video darsliklar</h2>
-          <p class="grid-text">Har qanday bilim darajasidan professional darajaga chiqmoqchi bo’lganlar
-            uchun, oddiy texnik analizdan tortib psixologik boshqaruvgacha o’rgatilgan.Shu bilan birga siz trading
-            yo’lingizni hozirgi
-            qadamda stabil foyda qiladigan trader darajasiga olib chiqasiz.</p>
+        <div class="market-tabs">
+          <button class="tab-btn active">Crypto</button>
+          <button class="tab-btn">Stocks</button>
+          <button class="tab-btn">Forex</button>
+          <button class="tab-btn">Commodities</button>
         </div>
-      </div>
-
-      
-    </div>
-    <div class="container grid-container-second">
-      <div class=" grid-1">
-        <img class="grid-image" src="./images/indvidual.svg" alt="computer" width="75" height="75" />
-        <h2 class="grid-title">Indvidual kurslar</h2>
-        <p class="grid-text">Individual kurslar faqat zoom orqali bo’lib o’tadi, sizga professional yondashib sizdagi
-          kamchiliklar hammasi bartaraf qilinadi va siz mustaqil savdo qilish darajasiga chiqasiz va biz o’rgatgan
-          strategiya kafolatlanadi.</p>
-      </div>
-
-      <div class=" grid-1">
-        <img class="grid-image" src="./images/together.svg" alt="computer" width="75" height="75" />
-        <h2 class="grid-title">Oflayn kurslar (Ofisda)</h2>
-        <p class="grid-text">Ofisda o’quv kurslarimizda tahsil olishingiz mumkin bo’ladi. Professional trader
-          tomonidan mukammal o’rgatiladi va 2 ta kurator belgilanadi. Bu sizga mukammal o’rganishga yordam beradi.</p>
-      </div>
-    </div>
-
-    <!-- Prices -->
-
-    <div class="container pricing-container">
-      <h1 class="pricing-title">Bizning xizmatlar bo`yicha <span class="hero-span">narxlar</span></h1>
-      <p class="pricing-text">
-        Mana bizning narx rejamiz: arzon, tushunarli va hech qanday yashirin to‘lovlarsiz. Hammasi shu. Keling,
-        boshlaymiz !
-      </p>
-
-      <div class=" grid-cons-grid">
-        <div class="grid-2">
-          <h2 class="pricing-grid-title">Signallar</h2>
-          <h2 class="pricing-grid-text"><span class="hero-span grid-span">$39/</span>Monthly</h2>
-          <hr class="hr">
-          <h2 class="pricing-grid-text"><span class="hero-span grid-span">$109/</span>3 months</h2>
-          <hr class="hr">
-          <h2 class="pricing-grid-text"><span class="hero-span grid-span">$369/</span>Yearly</h2>
-          <hr class="hr">
-          <br>
-          <br>
-          <div class="grid-line">
-            <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-            <p class="line-title">Haftalik 3-7 tadan savdo</p>
+        <div class="market-table">
+          <div class="table-header">
+            <div class="col">Asset</div>
+            <div class="col">Price</div>
+            <div class="col">24h Change</div>
+            <div class="col">Market Cap</div>
+            <div class="col">Action</div>
           </div>
-
-          <div class="grid-line">
-            <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-            <p class="line-title">Har bir signal uchun mukammal analiz</p>
-          </div>
-
-          <div class="grid-line">
-            <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-            <p class="line-title">Maksimal risk menejment</p>
-          </div>
-
-          <div class="grid-line last-line">
-            <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-            <p class="line-title last-title">Riskka nisbatan 2 barobar foyda</p>
-          </div>
-
-
-
-          <a class="close-plan" href="https://t.me/miracle_investment_admin"">Tanlash</a>
-        </div>
-
-        <div class=" second-grid">
-            <h2 class="pricing-grid-title">Indvidual kurslar</h2>
-            <h2 class="pricing-grid-text"><span class="hero-span grid-span">$477/</span></h2>
-            <hr class="hr">
-
-            <br>
-            <br>
-            <div class="grid-line">
-              <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-              <p class="line-title">50 dan ortiq Video darslik</p>
-            </div>
-
-            <div class="grid-line">
-              <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-              <p class="line-title">Har bir mavzuga 15 dan ortiq topshiriq</p>
-            </div>
-
-            <div class="grid-line">
-              <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-              <p class="line-title">Haftalik bozor analizi</p>
-            </div>
-
-            <div class="grid-line">
-              <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-              <p class="line-title">Shaxsiy telegram guruhga obuna</p>
-            </div>
-
-            <div class="grid-line last-two">
-              <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-              <p class="line-title  last-two-off">24/7 qo’llab quvvatlash</p>
-            </div>
-
-            <a class="close-plan second-one" href="https://t.me/miracle_investment_admin"">Tanlash</a>
-        </div>
-
-
-      </div>
-
-      <div class=" third-grid">
-              <h2 class="pricing-grid-title">Zoom kurslar</h2>
-              <h2 class="pricing-grid-text"><span class="hero-span grid-span">$699/</span></h2>
-              <hr class="hr">
-
-
-              <br>
-              <br>
-              <div class="grid-line">
-                <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-                <p class="line-title">Haftada 5 marta zoom uchrashuv</p>
+          <div class="table-row">
+            <div class="col asset">
+              <img src="https://via.placeholder.com/24" alt="BTC" />
+              <div>
+                <h4>Bitcoin</h4>
+                <span>BTC</span>
               </div>
-
-              <div class="grid-line">
-                <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-                <p class="line-title">Bozorni har hafta birgalikda tahlil qilish</p>
+            </div>
+            <div class="col">$43,256.78</div>
+            <div class="col change positive">+2.45%</div>
+            <div class="col">$825.4B</div>
+            <div class="col"><a href="#" class="btn btn-sm">Trade</a></div>
+          </div>
+          <div class="table-row">
+            <div class="col asset">
+              <img src="https://via.placeholder.com/24" alt="ETH" />
+              <div>
+                <h4>Ethereum</h4>
+                <span>ETH</span>
               </div>
-
-              <div class="grid-line">
-                <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-                <p class="line-title">Signal kanalga bepul obuna</p>
+            </div>
+            <div class="col">$3,245.12</div>
+            <div class="col change positive">+1.87%</div>
+            <div class="col">$389.2B</div>
+            <div class="col"><a href="#" class="btn btn-sm">Trade</a></div>
+          </div>
+          <div class="table-row">
+            <div class="col asset">
+              <img src="https://via.placeholder.com/24" alt="SOL" />
+              <div>
+                <h4>Solana</h4>
+                <span>SOL</span>
               </div>
-
-              <div class="grid-line">
-                <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-                <p class="line-title">24/7 qo’llab quvvatlash</p>
+            </div>
+            <div class="col">$102.34</div>
+            <div class="col change negative">-0.75%</div>
+            <div class="col">$42.8B</div>
+            <div class="col"><a href="#" class="btn btn-sm">Trade</a></div>
+          </div>
+          <div class="table-row">
+            <div class="col asset">
+              <img src="https://via.placeholder.com/24" alt="ADA" />
+              <div>
+                <h4>Cardano</h4>
+                <span>ADA</span>
               </div>
-
-              <div class="grid-line last-two">
-                <img class="line-pic" src="./images/check-box.svg" width="24" height="24" alt="">
-                <p class="line-title  last-two-off">Shaxsiy telegram guruhga obuna</p>
-              </div>
-
-              <a class="close-plan second-one" href="https://t.me/miracle_investment_admin">Tanlash</a>
+            </div>
+            <div class="col">$0.58</div>
+            <div class="col change positive">+3.21%</div>
+            <div class="col">$20.5B</div>
+            <div class="col"><a href="#" class="btn btn-sm">Trade</a></div>
+          </div>
+        </div>
+        <div class="view-all">
+          <a href="#" class="btn btn-outline">View All Markets</a>
         </div>
       </div>
-    </div>
+    </section> -->
 
-    <div class="container about">
-      <h1 class="services-title road container">Men <span class="hero-span">haqimda</span> ma`lumotlar</h1>
-      <div class="team-first">
-        <div class="team-item">
-          <div class="team-word container">
-            <h2 class="item-title"></h2>
-
-            <p class="item-text team-text">Men-Shahriyor professional treyder, Miracle Investment trading jamoasi va
-              akademiyasi asoschisiman. Yillar davomida bozordagi o‘zgarishlarni chuqur tahlil qilib, stabil daromad
-              olish tizimini shakllantirdim. Mening treyding uslubim – qat’iy risk boshqaruvi, puxta strategiyalar va
-              psixologik barqarorlikka asoslanadi.</p>
-
-            <p class="item-text">Miracle Investment jamoasi va akademiyasi orqali ko‘plab shogirdlarga bilim berib
-              kelmoqdaman. Ularning natijalari bu yo‘ldagi mehnatimiz va yondashuvimiz samarali ekanini tasdiqlaydi.
-              Bizning maqsad – bozorda uzoq muddatli muvaffaqiyatga erishish uchun kerakli bilim, tajriba va
-              mentalitetni shakllantirishdir.</p>
-
-            <p class="item-text">Bundan tashqari, investitsion maslahatlar, portfel tuzish va kapitalni samarali
-              boshqarish bo‘yicha individual konsultatsiyalar ham taqdim etaman.</p>
-
-            <p class="item-text">Shuningdek, men yuritayotgan trading signal kanali bugungi kunda eng ishonchli
-              manbalardan biri bo‘lib, oylik daromadlilik 10%+ (risk 0.5–1%) darajasida saqlanmoqda.</p>
-            <p class="item-text">Treydingdagi eng katta to‘siqlardan biri — emotsiyalarni boshqarish, bu borada men
-              o‘zimning oddiy va samarali formulamni ishlab chiqqanman. Bu formula yordamida treyderlar bozor bosimi
-              ostida ham to‘g‘ri qaror qabul qila olishadi.</p>
-            <p class="item-text">Agar siz ham professional yondashuvni o‘rganmoqchi, daromadingizni stabil qilishni
-              xohlasangiz — siz to‘g‘ri manzildasiz.</p>
-          </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>Comprehensive trading solutions for all your needs</p>
         </div>
-      </div>
-    </div>
-
-    <!-- FAQ -->
-
-    <section class="faq-section">
-      <h2 class="services-title container">Most Common <span class="hero-span">FAQ</span></h2>
-      <div class="faq-columns">
-
-        <!-- Left Column -->
-        <div class="faq-column">
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq1" class="faq-checkbox">
-            <label for="faq1" class="faq-label">
-              <h4 class="faq-question">What Are The Benefits Of Online Trading?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Online trading’s primary advantages are that it allows you to manage your trades at
-              your convenience,</p>
-          </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq2" class="faq-checkbox">
-            <label for="faq2" class="faq-label">
-              <h4 class="faq-question">What Are The Disadvantages Of Online Trading?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Potential risks include lack of human guidance, fast-paced losses, and emotional
-              trading decisions.</p>
-          </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq3" class="faq-checkbox">
-            <label for="faq3" class="faq-label">
-              <h4 class="faq-question">Is Online Trading Safe?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Yes, with reputable platforms and security measures like 2FA, encryption, and secure
-              accounts.</p>
-          </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq4" class="faq-checkbox">
-            <label for="faq4" class="faq-label">
-              <h4 class="faq-question">Which App Is Best For Online Trading?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Some popular apps include Robinhood, eToro, and Webull depending on your region and
-              needs.</p>
-          </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq5" class="faq-checkbox">
-            <label for="faq5" class="faq-label">
-              <h4 class="faq-question">What Is Online Trading, And How Does It Work?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">It is the act of buying/selling financial products via the internet using trading
-              platforms.</p>
-          </div>
-
-        </div>
-
-        <!-- Right Column -->
-        <div class="faq-column">
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq6" class="faq-checkbox">
-            <label for="faq6" class="faq-label">
-              <h4 class="faq-question">How To Create A Trading Account?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Visit a broker’s website, register with your details, verify your ID, and start
-              funding your account.</p>
-          </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq7" class="faq-checkbox">
-            <label for="faq7" class="faq-label">
-              <h4 class="faq-question">What Are The Benefits Of Online Trading?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Manage your trades at your convenience, serves as an extra source of income, and you
-              won't need.</p>
-          </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq8" class="faq-checkbox">
-            <label for="faq8" class="faq-label">
-              <h4 class="faq-question">Which App Is Best For Online Trading?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Depends on your trading needs. Beginners may prefer apps with easy UI and low fees.
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Market Analysis</h3>
+            <p>
+              Professional market analysis and insights to help you make
+              informed trading decisions.
             </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq9" class="faq-checkbox">
-            <label for="faq9" class="faq-label">
-              <h4 class="faq-question">What Is Online Trading, And How Does It Work?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Trading done through an internet-connected device using platforms like MetaTrader or
-              brokerage apps.</p>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Automated Trading</h3>
+            <p>
+              Set up automated trading strategies that work 24/7 based on your
+              predefined parameters.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
-
-          <div class="faq-item">
-            <input type="checkbox" id="faq10" class="faq-checkbox">
-            <label for="faq10" class="faq-label">
-              <h4 class="faq-question">How To Create A Trading Account?</h4>
-              <span class="faq-icon">+</span>
-            </label>
-            <p class="faq-answer">Go to a broker site, sign up, verify your identity, and you're ready to go!</p>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Trading Education</h3>
+            <p>
+              Comprehensive educational resources to help you master the art of
+              trading.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
-
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Community Access</h3>
+            <p>
+              Join our exclusive community of traders to share insights and
+              strategies.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-signal"></i>
+            </div>
+            <h3>Trading Signals</h3>
+            <p>
+              Receive real-time trading signals with high accuracy to maximize
+              your profits.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>
+              Our dedicated support team is available around the clock to assist
+              you with any issues.
+            </p>
+            <a href="#" class="service-link"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
-
       </div>
     </section>
 
-    <section class="articles-section">
-      <div class="articles-header">
-        <h2 class="container services-title popular">Popular Trading <span class="hero-span">Articles</span></h2>
-      </div>
-      <div class="articles-grid">
-
-        <!-- Article 1 -->
-        <div class="article-card">
-          <img src="./images/man.png" alt="Trading tips" class="article-image">
-          <h3 class="article-heading">Top 10 Tips For Successful Trading.</h3>
-          <p class="article-description">
-            Follow these 10 trading tips: research, diversify, stay disciplined, risk smartly, stay informed,
-            trade small, stay patient, track performance, ignore emotions, and learn from failures.
-          </p>
-          <a href="#" class="article-link">Read More </a>
+    <!-- Pricing Section -->
+    <section id="prices" class="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pricing Plans</h2>
+          <p>Choose the perfect plan for your trading needs</p>
         </div>
-
-        <!-- Article 2 -->
-        <div class="article-card">
-          <img src="./images/group.png" alt="Trading tales" class="article-image">
-          <h3 class="article-heading">Trading Tales: Wins And Losses In The Market!</h3>
-          <p class="article-description">
-            Trading Tales reminds us that profits and losses are part of the investment game, but it’s the lessons
-            learned that truly matter. Keep calm and trade on!
-          </p>
-          <a href="#" class="article-link">Read More</a>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Basic</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">29</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Basic market analysis</li>
+                <li><i class="fas fa-check"></i> 5 trading signals per week</li>
+                <li><i class="fas fa-check"></i> Community access</li>
+                <li><i class="fas fa-check"></i> Email support</li>
+                <li class="disabled">
+                  <i class="fas fa-times"></i> Automated trading
+                </li>
+                <li class="disabled">
+                  <i class="fas fa-times"></i> Advanced indicators
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#" class="btn btn-outline">Get Started</a>
+            </div>
+          </div>
+          <div class="pricing-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Pro</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">79</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Advanced market analysis</li>
+                <li>
+                  <i class="fas fa-check"></i> 20 trading signals per week
+                </li>
+                <li><i class="fas fa-check"></i> Community access</li>
+                <li><i class="fas fa-check"></i> Priority support</li>
+                <li><i class="fas fa-check"></i> Basic automated trading</li>
+                <li class="disabled">
+                  <i class="fas fa-times"></i> Advanced indicators
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Elite</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">149</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <li><i class="fas fa-check"></i> Premium market analysis</li>
+                <li><i class="fas fa-check"></i> Unlimited trading signals</li>
+                <li><i class="fas fa-check"></i> VIP community access</li>
+                <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+                <li><i class="fas fa-check"></i> Advanced automated trading</li>
+                <li><i class="fas fa-check"></i> Advanced indicators</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#" class="btn btn-outline">Get Started</a>
+            </div>
+          </div>
         </div>
-
       </div>
     </section>
-  </main>
 
-  <footer class="container footer">
-    <div class="container footer-contaner">
-
-      <!-- Logo + Description -->
-      <div class="container footer-box footer-logo-box">
-        <div class="footer-logo-text">
-          <img src="./images/logo (2).svg" alt="" width="262" height="80">
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p class="lead">
+            Professional trader with over 10 years of experience in financial
+            markets
+          </p>
+          <p>
+            I started my trading journey in 2012 and have since helped thousands
+            of traders achieve their financial goals. My approach combines
+            technical analysis, fundamental research, and risk management to
+            create effective trading strategies.
+          </p>
+          <p>
+            After working for several major financial institutions, I decided to
+            share my knowledge and experience with individual traders who want
+            to improve their skills and results.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>10+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h3>15,000+</h3>
+              <p>Students</p>
+            </div>
+            <div class="stat">
+              <h3>92%</h3>
+              <p>Success Rate</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Learn More About Me</a>
         </div>
-        <p class="footer-description">
-          Welcome to our trading site! We offer the best, most affordable products and services around.
-          Shop now and start finding great deals!
-        </p>
-        <div class="footer-social-icons">
-          <img src="./images/face-book.svg" alt="">
-          <img src="./images/instagram-med.svg" alt="">
-          <img src="./images/instagram-real.svg" alt="">
-          <img src="./images/twitter (2).svg" alt="">
-
+        <div class="about-image">
+          <img src="https://via.placeholder.com/500x600" alt="Trading Expert" />
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Find answers to common questions about our trading services</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do I get started with trading?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Getting started is easy. Simply sign up for an account, choose
+                your preferred trading plan, and follow our step-by-step
+                tutorials. We recommend starting with our educational resources
+                to build a solid foundation before making your first trade.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What trading platforms do you support?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We support all major trading platforms including MetaTrader 4,
+                MetaTrader 5, TradingView, and our proprietary Gtrade platform.
+                Our signals and strategies can be implemented on any of these
+                platforms.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How accurate are your trading signals?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our trading signals have a historical accuracy of 82-87%.
+                However, it's important to understand that all trading involves
+                risk, and past performance is not indicative of future results.
+                We provide comprehensive risk management guidelines with each
+                signal.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I cancel my subscription at any time?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, you can cancel your subscription at any time. There are no
+                long-term contracts or hidden fees. If you cancel, you'll
+                continue to have access to your current plan until the end of
+                your billing period.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you offer one-on-one coaching?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we offer personalized one-on-one coaching sessions for
+                traders who want dedicated guidance. These sessions are
+                available to Elite plan subscribers or can be purchased
+                separately. Contact our support team for more information.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is the minimum capital required to start trading?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                While you can start with as little as $100, we recommend a
+                minimum capital of $1,000 to properly implement our strategies
+                with adequate risk management. Remember that trading with very
+                small capital can limit your ability to diversify and manage
+                risk effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </footer>
+    <!-- Video Articles Section -->
+    <section id="videos" class="videos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular Video Articles</h2>
+          <p>
+            Learn trading strategies and market analysis through our video
+            content
+          </p>
+        </div>
+        <div class="videos-grid">
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <img
+                src="https://via.placeholder.com/350x200"
+                alt="Trading Strategy Video"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Mastering Price Action Trading</h3>
+              <p>
+                Learn how to read price action and make better trading decisions
+                without relying on indicators.
+              </p>
+              <div class="video-meta">
+                <span><i class="fas fa-eye"></i> 45.2K views</span>
+                <span><i class="fas fa-calendar"></i> Apr 15, 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <img
+                src="https://via.placeholder.com/350x200"
+                alt="Risk Management Video"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Risk Management Essentials</h3>
+              <p>
+                Discover the key principles of risk management that can protect
+                your trading capital.
+              </p>
+              <div class="video-meta">
+                <span><i class="fas fa-eye"></i> 38.7K views</span>
+                <span><i class="fas fa-calendar"></i> May 22, 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <img
+                src="https://via.placeholder.com/350x200"
+                alt="Technical Analysis Video"
+              />
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Technical Analysis Fundamentals</h3>
+              <p>
+                A comprehensive guide to understanding and applying technical
+                analysis in your trading.
+              </p>
+              <div class="video-meta">
+                <span><i class="fas fa-eye"></i> 62.1K views</span>
+                <span><i class="fas fa-calendar"></i> Jun 8, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="videos-cta">
+          <a href="#" class="btn btn-outline">View All Videos</a>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Bottom CTA Section -->
+    <section class="bottom-cta">
+      <div class="container">
+        <div class="bottom-cta-content">
+          <h2>Ready to transform your trading?</h2>
+          <p>
+            Join our community of successful traders and take your skills to the
+            next level
+          </p>
+          <div class="bottom-cta-buttons">
+            <a href="#" class="btn btn-primary">Text Us</a>
+            <a href="#" class="btn btn-outline">Watch Now</a>
+          </div>
+        </div>
+        <div class="bottom-cta-image">
+          <img
+            src="https://via.placeholder.com/500x300"
+            alt="Trading Success"
+          />
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <h2>Gtrade</h2>
+            </div>
+            <p>
+              A leading platform for trading education, signals, and community
+              support.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#markets">Markets</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#prices">Pricing</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#videos">Videos</a></li>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">E-books</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Risk Disclosure</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Gtrade. All rights reserved.</p>
+          <div class="language-selector">
+            <select>
+              <option>English</option>
+              <option>Spanish</option>
+              <option>French</option>
+              <option>German</option>
+              <option>Russian</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .querySelector(".mobile-menu-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
+
+      // Tab functionality
+      const tabBtns = document.querySelectorAll(".tab-btn");
+      tabBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          tabBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+
+      // FAQ toggle functionality
+      const faqToggles = document.querySelectorAll(".faq-toggle");
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          const faqItem = toggle.closest(".faq-item");
+          faqItem.classList.toggle("active");
+
+          // Change the icon
+          const icon = toggle.querySelector("i");
+          if (faqItem.classList.contains("active")) {
+            icon.classList.remove("fa-plus");
+            icon.classList.add("fa-minus");
+          } else {
+            icon.classList.remove("fa-minus");
+            icon.classList.add("fa-plus");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
